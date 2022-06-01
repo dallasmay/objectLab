@@ -469,7 +469,7 @@ class Boat extends Vehicle {
 
   checkSeaWorthiness() {
     if (this.isSeaWorthy) {
-      console.log(`The ${this.color} ${this.type} is seaworthy!`)
+      console.log(`The ${this.color} ${this.type} ${this.name} is seaworthy!`)
     } else {
       console.log(`You need to get your ${this.type} in shape!`)
     }
@@ -486,21 +486,24 @@ class Boat extends Vehicle {
 */
 
 //Code Here
+let myFirstBoat = new Boat(6, "maroon", 3000, "Rocky Bottom", "yacht", false);
+// console.log(myFirstBoat);
 
 /*
   Call the checkSeaworthiness method on your new boat
 */
 
 //Code Here
-
+myFirstBoat.checkSeaWorthiness();
 /*
   Now run the performMaintenance method on your boat
 */
 
 //Code Here 
-
+myFirstBoat.performMaintenance();
 /*
   Check the seaworthiness once more (you should be ready for the water!)
 */
 
 //Code Here
+myFirstBoat.checkSeaWorthiness();
